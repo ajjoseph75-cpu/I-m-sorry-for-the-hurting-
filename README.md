@@ -1,6 +1,4 @@
-# I'm Sorry — Calming Interactive Website
-
-A calm, interactive apology experience designed for GitHub Pages.
+# I'm Sorry 
 
 ## Files
 
