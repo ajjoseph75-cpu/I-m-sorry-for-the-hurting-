@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#75616b">
+<title>I'm Sorry</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient ambient-one"></div>
+<div class="ambient ambient-two"></div>
+
+<main class="app">
+
+<section class="screen active" id="welcome">
+  <div class="card">
+    <div class="eyebrow">A quiet message from my heart</div>
+    <div class="symbol">🤍</div>
+    <h1>I'm Sorry.</h1>
+    <p class="lead">
+      I know I hurt you. I made this because I wanted to slow down,
+      stop defending myself, and say what I should have said with more care.
+    </p>
+    <button class="primary" data-next="pause">Read when you're ready</button>
+    <p class="soft-note">There is no timer and no pressure.</p>
+  </div>
+</section>
+
+<section class="screen" id="pause">
+  <div class="card">
+    <div class="eyebrow">Before anything else</div>
+    <h2>Just one quiet moment.</h2>
+
+    <div class="breathing-wrap">
+      <div class="breathing-circle" aria-hidden="true">
+        <span id="breathText">Breathe</span>
+      </div>
+    </div>
+
+    <p>
+      I don't want this apology to feel rushed.
+      This moment is simply here to slow everything down before I say more.
+    </p>
+
+    <button class="primary" data-next="own">I'm ready</button>
+  </div>
+</section>
+
+<section class="screen" id="own">
+  <div class="card">
+    <div class="eyebrow">What I need to own</div>
+    <h2>I hurt you.</h2>
+
+    <div class="reveal-list">
+      <button class="reveal-item" data-text="My intentions do not erase the impact of what I did.">
+        <span>01</span>
+        <strong>I understand that impact matters.</strong>
+      </button>
+
+      <button class="reveal-item" data-text="You deserved more care, patience, and thought from me in that moment.">
+        <span>02</span>
+        <strong>You deserved better from me.</strong>
+      </button>
+
+      <button class="reveal-item" data-text="I am not here to argue my side. I am here to take responsibility for hurting you.">
+        <span>03</span>
+        <strong>I am not making excuses.</strong>
+      </button>
+    </div>
+
+    <div class="reflection" id="reflection">
+      Tap each thought when you're ready.
+    </div>
+
+    <button class="primary hidden" id="ownNext" data-next="regret">Continue</button>
+  </div>
+</section>
+
+<section class="screen" id="regret">
+  <div class="card">
+    <div class="eyebrow">What I wish I had done differently</div>
+    <h2>If I could replay that moment...</h2>
+
+    <div class="promise-grid">
+      <article>
+        <div class="small-icon">👂🏽</div>
+        <h3>I would listen first.</h3>
+        <p>
+          I would try to understand what you were feeling before reacting from my own emotions.
+        </p>
+      </article>
+
+      <article>
+        <div class="small-icon">💬</div>
+        <h3>I would choose my words with care.</h3>
+        <p>
+          Words can stay with someone long after a moment ends.
+          I should have treated yours more gently.
+        </p>
+      </article>
+
+      <article>
+        <div class="small-icon">❤️</div>
+        <h3>I would remember who I was speaking to.</h3>
+        <p>
+          Not an opponent. Not somebody I needed to beat in an argument.
+          Someone I love.
+        </p>
+      </article>
+    </div>
+
+    <button class="primary" data-next="truth">Keep going</button>
+  </div>
+</section>
+
+<section class="screen" id="truth">
+  <div class="card">
+    <div class="eyebrow">The truth underneath all of this</div>
+    <h2>You matter to me.</h2>
+
+    <p class="lead">
+      Hurting you weighs on me because I care about you deeply.
+      I never want my love for you to exist only in the words “I love you.”
+    </p>
+
+    <div class="tap-heart">
+      <button id="heartButton" aria-label="Reveal message">♡</button>
+      <p id="heartMessage">Tap the heart.</p>
+    </div>
+
+    <button class="primary hidden" id="truthNext" data-next="change">Continue</button>
+  </div>
+</section>
+
+<section class="screen" id="change">
+  <div class="card">
+    <div class="eyebrow">What an apology should become</div>
+    <h2>Changed behavior.</h2>
+
+    <p>
+      I don't expect one website, one conversation, or one apology
+      to erase what happened.
+    </p>
+
+    <blockquote>
+      I want what comes after this apology to show that I learned from it.
+    </blockquote>
+
+    <div class="commitments">
+      <div>Pause before reacting.</div>
+      <div>Listen to understand.</div>
+      <div>Speak with respect, even when emotions are high.</div>
+      <div>Make sure my actions match the love I say I have.</div>
+    </div>
+
+    <button class="primary" data-next="final">My final message</button>
+  </div>
+</section>
+
+<section class="screen" id="final">
+  <div class="card final-card">
+    <div class="eyebrow">From me to you</div>
+    <div class="symbol">🤍</div>
+    <h1>I'm truly sorry.</h1>
+
+    <p class="lead">
+      I'm sorry for hurting you.
+      I love you, and I regret that my actions made someone I care about
+      feel anything less than loved.
+    </p>
+
+    <p>
+      You do not owe me an immediate response.
+      You do not owe me immediate forgiveness.
+      Take whatever time and space you need.
+    </p>
+
+    <p>
+      What I can control is what I do next:
+      take responsibility, learn, and show you better through my actions.
+    </p>
+
+    <div class="signature">
+      With love,<br>
+      <strong>AJ ❤️</strong>
+    </div>
+
+    <button class="secondary" id="restartButton">Read again</button>
+  </div>
+</section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
